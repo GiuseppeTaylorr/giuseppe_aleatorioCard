@@ -1,1 +1,51 @@
-@import "~bootstrap/dist/css/bootstrap.min.css";
+body {
+  display: flex;
+  background-color: rgb(13, 107, 13);
+  justify-content: center;
+}
+.container.reversed {
+  display: flex;
+  flex-direction: row-reverse; /* Invertir la dirección de los elementos flexibles */
+}
+
+/* .card {
+  width: 200px;
+  height: 350px;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  border: black solid 3px;
+} */
+.card {
+  width: 200px;
+  height: 350px;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  border: black solid 3px;
+  display: flex;
+  flex-direction: column; /* Alinear los elementos en una columna */
+  align-items: flex-end; /* Alinear los elementos en la esquina superior derecha */
+  padding: 10px; /* Añadir espacio interior */
+  position: relative;
+}
+#numero {
+  font-size: 36pt;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column; /* Alinear el número y el símbolo en columnas */
+}
+#numero span {
+  display: block;
+  transform: rotate(180deg); /* Girar cada span 180 grados */
+}
+.top {
+  order: 1; /* Cambiar el orden para que el número aparezca arriba */
+}
+
+.rojo {
+  color: red;
+}
+.negro {
+  color: black;
+}
