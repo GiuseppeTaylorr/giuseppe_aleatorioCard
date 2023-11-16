@@ -23,17 +23,27 @@ body {
   border: black solid 3px;
   display: flex;
   flex-direction: column; /* Alinear los elementos en una columna */
-  align-items: flex-end; /* Alinear los elementos en la esquina superior derecha */
+  justify-content: space-between;
   padding: 10px; /* Añadir espacio interior */
   position: relative;
 }
-#numero {
+#numero-superior {
   font-size: 36pt;
-  position: absolute;
-  top: 0;
-  left: 0;
   display: flex;
-  flex-direction: column; /* Alinear el número y el símbolo en columnas */
+  justify-content: start;
+  width: 100%;
+}
+#numero-inferior {
+  font-size: 36pt;
+  display: flex;
+  justify-content: end;
+  width: 100%;
+}
+#simbolo {
+  font-size: 72pt;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 #numero span {
   display: block;
